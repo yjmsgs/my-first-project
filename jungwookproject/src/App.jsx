@@ -5,7 +5,7 @@ import './App.css'
 // default number:50
 // when a user click the button, it will -1
 function App() {
-  const [count, setCount] = useState(50);
+  const [count, setCount] = useState(1);
   return (
     <>
       <div>
@@ -18,7 +18,7 @@ function App() {
       </div>
       <h1>jungwookproject</h1>
       <div className="card">
-        <button onClick={() => setCount((a) => a - 1)}>
+        <button onClick={() => setCount((a) => a * 2)}>
           count is {count}
         </button>
         <p>
